@@ -4,6 +4,42 @@
     --red: #770000;
 }
 
+@keyframes img{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+
+}
+
+@keyframes bol{
+    0%{margin-left: 0%;}
+    50%{margin-left: calc(100% - 300px);}
+    100%{margin-left: 0%;}
+}
+
+@keyframes red{
+    0%{background-color: red;}
+    25%{background-color: blue;}
+    50%{background-color: green;}
+    75%{background-color: blue;}
+    100%{background-color: red;}
+}
+
+@keyframes green{
+    0%{background-color: green;}
+    25%{background-color: red;}
+    50%{background-color: blue;}
+    75%{background-color: red;}
+    100%{background-color: green;}
+}
+
+@keyframes blue{
+    0%{background-color: blue;}
+    25%{background-color: green;}
+    50%{background-color: red;}
+    75%{background-color: green;}
+    100%{background-color: blue;}
+}
+
 header{
     text-align: center;
 }
@@ -11,6 +47,8 @@ header{
 header img{
     width: 150px;
     border-radius: 50%;
+    animation: img;
+    animation-duration: 4s;
 }
 
 header a{
@@ -27,7 +65,9 @@ h1{
 .tela{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    animation: bol;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .bola{
@@ -38,14 +78,23 @@ h1{
 
 #red{
     background-color: #F00;
+    animation: red;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #green{
     background-color: #0F0;
+    animation: green;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 #blue{
     background-color: #00F;
+    animation: blue;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 article header{
