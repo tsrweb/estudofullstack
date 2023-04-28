@@ -8,13 +8,11 @@
 </head>
 <body>
 
-    <header>
+    <header class="mainHeader">
         <div class="container">
             <div class="brand">
                 <img src="assets/images/logo.png" alt="brandImage">
-            </div>
-
-            <div class="navigation">
+            </div>            
                 <nav>
                     <ul>
                         <li><a href="#" class="active">HOME</a></li>
@@ -25,31 +23,38 @@
                         <li><a href="#">GALLERY</a></li>
                         <li><a href="#">CONTACT</a></li>  
                     </ul>
-                </nav>
-            </div>
+                </nav>            
         </div>
     </header>
 
     <section id="banner">
         <div class="container column">
-            <div class="bannerText">
-                <h1>Top notch experience</h1>
-                <h2>Medicenter is a responsive template perfect for all screen sizes</h2>
-            </div>
+            <article class="bannerText">
+                <header>
+                    <h1>Top notch experience</h1>
+                </header>
+                <p>Medicenter is a responsive template perfect for all screen sizes</p>
+            </article>
             <div class="bannerOption">
-                <div class="box1">
-                    <h3>Emergency Case</h3>
+                <article class="box boxColor1">
+                    <header>
+                        <h3>Emergency Case</h3>
+                    </header>
                     <p>if you a doctor urgently outside of medicenter opening hours. call emergency appointment number service.</p>
                     <a href="#">Read more -></a>
-                </div>
-                <div class="box2">
-                    <h3>Doctors Timetable</h3>
+                </article>
+                <article class="box boxColor2">
+                    <header>
+                        <h3>Doctors Timetable</h3>
+                    </header>
                     <p>Here at medicenter we have individual doctor's lists. Click read more bellow to see services and current timetable for our doctors.</p>
                     <a href="#">Read more -></a>
-                </div>
-                <div class="box3">
-                    <h3>Opening Hours</h3>
-                    <div class="box3Content">
+                </article>
+                <article class="box boxColor3">
+                    <header>
+                        <h3>Opening Hours</h3>
+                    </header>
+                    <div class="boxContent">
                         <div class="row">
                             <p class="weekDay">Mondei - Fryday</p>
                             <p class="hour">8.00 - 17.00</p>
@@ -63,42 +68,117 @@
                             <p class="hour">9.30 - 15.00</p>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <main>
         <div class="container">
-            <div class="news">
-                <div class="widget">
-                    <div class="widgetTittle">Latest News</div>
+            <section class="news">
+                <header class="widget">
+                    <h2 class="widgetTittle">Latest News</h2>
                     <div class="widgetTittleBar"></div>
-                    <div class="widgetContent">
-                        ...
-                    </div>
+                </header>
+
+                <div class="widgetContent">
+
+                    <article>
+                        <header>
+                            <div class="row">
+                                <div class="data">12 DEC 12</div><div class="coments">2</div>
+                            </div>
+                            <img src="./assets/images/newsImage1.png" alt="">
+                            <h3>Lorem ipsum dolor sit amat velum</h3>
+                        </header>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mosslis tellus neque vitae elit, Mauris adipiscing mauris.</p>
+                        <footer>Posted in <a href="#">General.</a><a href="#">Dental Clinic</a></footer>
+                    </article>
+
+                    <article>
+                        <header>
+                            <div class="row">
+                                <div class="data">12 DEC 12</div><div class="coments">2</div>
+                            </div>
+                            <img src="" alt="">
+                            <h3>Lorem ipsum dolor sit amat velum</h3>
+                        </header>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mosslis tellus neque vitae elit, Mauris adipiscing mauris.</p>
+                        <footer>Posted in <a href="#">General.</a><a href="#">Dental Clinic</a></footer>
+                    </article>
+
+                    <article>
+                        <header>
+                            <div class="row">
+                                <div class="data">12 DEC 12</div><div class="coments">2</div>
+                            </div>
+                            <img src="" alt="">
+                            <h3>Lorem ipsum dolor sit amat velum</h3>
+                        </header>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mosslis tellus neque vitae elit, Mauris adipiscing mauris.</p>
+                        <footer>Posted in <a href="#">General.</a><a href="#">Dental Clinic</a></footer>
+                    </article>
+
+                    <article>
+                        <header>
+                            <div class="row">
+                                <div class="data">12 DEC 12</div><div class="coments">2</div>
+                            </div>
+                            <img src="./assets/images/newsImage2.png" alt="">
+                            <h3>Lorem ipsum dolor sit amat velum</h3>
+                        </header>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin. Suspendisse pulvinar, velit nec pharetra interdum, ante tellus ornare mi, et mosslis tellus neque vitae elit, Mauris adipiscing mauris.</p>
+                        <footer>Posted in<a href="#">General.</a><a href="#">Dental Clinic</a></footer>
+                    </article>
                 </div>
-            </div>
+
+            </section>
             <aside>
-                <div class="widget">
-                    <div class="widgetTittle">Departmens</div>
-                    <div class="widgetTittleBar"></div>
-                    <div class="widgetContent">
+                <section class="news">
+                    <header class="widget">
+                        <h2 class="widgetTittle">Departments</h2>
+                        <div class="widgetTittleBar"></div>
+                    </header>
+    
+                    <article class="widetContent">
                         ...
-                    </div>
-                </div>
-                <div class="widget">
-                    <div class="widgetTittle">Make An Appointment</div>
-                    <div class="widgetTittleBar"></div>
-                    <div class="widgetContent">
-                        ...
-                    </div>
-                </div>
+                    </article>
+    
+                </section>
+
+                <section class="news make">
+                    <header class="widget">
+                        <h2 class="widgetTittle">Make At Appointment</h2>
+                        <div class="widgetTittleBar"></div>
+                    </header>
+                    
+                    <article class="widetContent">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat rutrum eros sit amet sollicitudin.</h3>
+                            <div class="list">
+                                <div class="row" style="border-top: 1px solid #C0C0C0;">
+                                    <img src="./assets/images/phoneIco.png" alt="">
+                                    <p>by phone: <b>1-800-643-4300</b></p>
+                                </div>
+                                <div class="row">
+                                    <img src="./assets/images/emailIco.png" alt="">
+                                    <p>by e-mail: <a href="#">medicenter@mail.com</a></p>
+                                </div>
+                                <div class="row">
+                                    <img src="./assets/images/formIco.png" alt="">
+                                    <p>or <a href="#">fill in the form</a> on our contact page</p>
+                                </div>
+                            </div>
+                        
+                    </article>
+    
+                </section>
             </aside>
         </div>
     </main>
-
-
 
 </body>
 </html>
