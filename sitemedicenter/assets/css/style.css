@@ -213,13 +213,13 @@ article header .row{
     margin: 30px 0;
 }
 
-.widgetContent .newsFooter a{
+.link a{
     color: #727272;
     margin-left: 5px;
 }
 
-.widgetContent .newsFooter a:hover{
-    background-color: #FFF;
+.link a:hover{
+    background: none;
     color: #0079C7;
 }
 
@@ -267,7 +267,7 @@ article header .row{
 footer{
     display: flex;
     justify-content: center;
-    height: 515px;
+    height: 530px;
     background-color: #202020;
     color: #FFF;
 }
@@ -283,8 +283,95 @@ footer{
 .footerArea{
     display: flex;
     flex: 1;
+    color: #c0c0c0;
 }
 
 .footerAreaContent{
     flex: 1;
+    font-size: 14px;
+}
+
+.footerAreaContent{
+    display: flex;
+    flex-direction: column;
+}
+
+address{
+    margin-top: 10px;
+}
+address .row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerAreaContent .widgetContent{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.footerAreaContent .widgetContent p{
+    margin-top: 0;
+}
+
+.socialMedia{
+    display: flex;
+    margin-top: 20px;
+}
+
+.socialMedia a{
+    text-decoration: none;
+    background-color: #555;
+    margin-right: 5px;
+}
+.socialMedia img{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+.footerAreaContent .widgetContent .row{
+    display: flex;
+}
+
+.posts .row{
+    margin-bottom: 20px;
+}
+.footerAreaContent .widgetContent span{
+    margin-right: 5px;
+}
+
+.linkPosts{
+    text-decoration: none;
+    color: #39AAE1;
+}
+
+.linkPosts:hover{
+    background: none;
+    color: #0079C7;
+}
+
+.copyright{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border-top: 1px solid #555;
+    font-size: 12px;
+    color: #555;
+}
+
+.copyright p{
+    margin: 10px 0;
+}
+
+.copyright a{
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+.copyright a:hover{
+    background: none;
+    color: #39AAE1;
 }
