@@ -4,7 +4,6 @@
 body{
     margin: 0;
     padding: 0;
-    margin-bottom: 300px;
 }
 
 .mainHeader{
@@ -86,19 +85,18 @@ nav .active, a:hover{
     padding: 0;
 }
 
-.bannerOption{
+.cardArea{
     display: flex;
     height: 210px;
-    background-color: #39AAE1;
 }
 
-.bannerOption h3{
+.cardArea h3{
     margin: 0;
     padding: 0;
     font-size: 20px;
 }
 
-.box{
+.card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -108,23 +106,23 @@ nav .active, a:hover{
     font-size: 13px;
 }
 
-.boxColor1{
+.cardColor1{
     background-color: #39AAE1;
 }
 
-.boxColor2{
+.cardColor2{
     background-color: #0079C7;
 }
 
-.boxColor3{
+.cardColor3{
     background-color: #2B4C99;
 }
 
-.bannerOption p{
+.cardArea p{
     margin-top: 25px;
 }
 
-.bannerOption a{
+.cardArea a{
     display: inline-block;
     text-decoration: none;
     padding: 5px;
@@ -134,7 +132,7 @@ nav .active, a:hover{
     width: 85px;
 }
 
-.box .row{
+.card .row{
     display: flex;
     justify-content: space-between;
     border-bottom: 0.5px solid #4468B2;
@@ -145,12 +143,12 @@ nav .active, a:hover{
     margin: 10px 0;
 }
 
-main{
+.centerArea{
     display: flex;
     justify-content: center;
 }
 
-.news{
+.content{
     flex: 2;
 }
 
@@ -209,20 +207,42 @@ article header .row{
     width: 100%;
 }
 
-.widgetContent footer{
+.widgetContent .newsFooter{
     font-size: 12px;
     color: #727272;
     margin: 30px 0;
 }
 
-.widgetContent footer a{
+.widgetContent .newsFooter a{
     color: #727272;
     margin-left: 5px;
 }
 
-.widgetContent footer a:hover{
+.widgetContent .newsFooter a:hover{
     background-color: #FFF;
     color: #0079C7;
+}
+
+.departments{
+    display: flex;
+    flex-direction: column;
+}
+
+.departments .widgetContent{
+    flex: 1;
+    align-content: space-between;
+}
+
+.departments .row{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.departments .box{
+    min-width: 150px;
+    height: 140px;
+    background-color: #39AAE1;
 }
 
 .make h3{
@@ -234,12 +254,37 @@ article header .row{
     width: 40px;
     margin-right: 10px;
 }
-.list{
+.MakeContact{
     display: flex;
     flex-direction: column;
 }
-.list .row {
+.MakeContact .row {
     display: flex;
     padding: 10px 0;
     border-bottom: 1px solid #c0c0c0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    height: 515px;
+    background-color: #202020;
+    color: #FFF;
+}
+
+.cardLinks{
+    height: 110px;
+}
+
+.cardLinks p {
+    margin-top: 10px;
+}
+
+.footerArea{
+    display: flex;
+    flex: 1;
+}
+
+.footerAreaContent{
+    flex: 1;
 }
