@@ -30,12 +30,9 @@ nav{
 
 nav ul{
     display: flex;
-}
-
-nav ul, nav li{
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 nav a{
@@ -50,12 +47,24 @@ nav .active, a:hover{
     color: #FFF;
 }
 
+.menuMobile{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px;
+
+}
+
+.mm_line{
+    border: 2px solid #39AAE1;
+}
+
 #banner{
     display: flex;
     justify-content: center;
     background-image: url('../images/banner.jpg');
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
     height: 670px;
 }
 
@@ -374,4 +383,104 @@ address .row{
 .copyright a:hover{
     background: none;
     color: #39AAE1;
+}
+
+@media (min-width:601px) and (max-width:768px){
+    .brand img{
+        width: 150px;
+    }
+
+    nav a{
+        padding: 5px;
+    }
+}
+
+@media (max-width:600px) {
+
+    header .container{
+        flex-direction: row;
+    }
+
+    .mainHeader{
+        height: auto;
+    }
+
+    .brand{
+        margin-left: 10px;
+    }
+
+    .menuMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    nav{
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+    }
+
+    #banner{
+        height: auto;
+        background-size: cover;
+    }
+
+    .bannerText{
+        padding: 100px 10px;
+
+    }
+    .bannerText h1{
+        font-size: 40px;
+    }
+    .bannerText p{
+        font-size: 17px;
+    }
+
+    .cardArea{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .content{
+        margin-left: 10px;
+    }
+
+    .departments .row{
+        justify-content: space-evenly;
+        height: 170px;
+    }
+
+    .make h3{
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .footerArea{
+        flex-direction: column;
+    }
+
+    .footerAreaContent{
+        margin-left: 10px;
+    }
+
+    .copyright{
+        margin-left: 10px;
+    }
+
 }
