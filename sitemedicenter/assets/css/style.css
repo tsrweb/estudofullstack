@@ -249,7 +249,7 @@ article header .row{
 }
 
 .departments .box{
-    min-width: 150px;
+    width: 150px;
     height: 140px;
     background-color: #39AAE1;
 }
@@ -387,11 +387,52 @@ address .row{
 
 @media (min-width:601px) and (max-width:768px){
     .brand img{
-        width: 150px;
+        width: 170px;
+        margin-left: 10px;
+    }
+
+    nav ul{
+        margin-right: 25px;
     }
 
     nav a{
         padding: 5px;
+        font-size: 14px;
+    }
+
+    .bannerText{
+        margin-left: 10px;
+    }
+
+    .content{
+        margin-left: 10px;
+    }
+
+    .departments .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .departments .row .box{
+        margin-bottom: 20px
+    }
+
+    .MakeContact .row{
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    .footerArea{
+        margin-left: 10px;
+    }
+
+    .copyright{
+        margin: 0 10px;
     }
 }
 
@@ -434,6 +475,9 @@ address .row{
 
     .bannerText{
         padding: 100px 10px;
+        background-image: url(../images/newsImage2.png);
+        background-size: cover;
+        max-width: 100%;
 
     }
     .bannerText h1{
@@ -480,7 +524,8 @@ address .row{
     }
 
     .copyright{
-        margin-left: 10px;
+        margin: 0 10px;
+        font-size: 10px;
     }
 
 }

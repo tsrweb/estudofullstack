@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="./assets/javaScript/script.js"></script>
+    <script type="text/javascript" src="./assets/javaScript/script.js"></script>
+    <script type="text/javascript" src="./assets/javaScript/jquery-1.11.3.js"></script>
     <title>Medicenter</title>
 </head>
 
@@ -154,7 +155,7 @@
                 </div>
             </main>
                 <aside>
-                    <section class="content departments">
+                    <section class="content departments" id="departments">
                         <header class="widget">
                             <h2 class="widgetTittle">Departments</h2>
                             <div class="widgetTittleBar"></div>
@@ -324,7 +325,7 @@
             </div>
             <div class="copyright">
                 <p>© Copyright - <a href="">MediCenter Template</a> by <a href="">QuanticaLabs</a></p>
-                <p><a href="#top">Top ^</a></p>
+                <p><a href="#" onclick="$('html,body').animate({scrollTop: $('#top').offset().top-50}, 2000);">Top ^</a></p>
             </div>
         </div>
     </footer>
