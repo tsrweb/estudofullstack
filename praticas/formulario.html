@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/formularioStyle.css"/>
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>Formulário para cadastro</legend>
+            <form>
+                <div class="row">
+                    <label for="name" name="name">Nome completo:</label>
+                    <input type="text" id="name" autocomplete="none" size="50">
+                </div>
+                <div class="row">
+                    <label for="email" name="email">E-mail:</label>
+                    <input type="email" name="email" id="email" autocomplete="none">
+                    <label for="birthday" name="birtday">Data de Nascimento:</label>
+                    <input type="date" id="birtday">
+                </div>
+                <div class="row">
+                    <label for="rg" name="rg">RG:</label>
+                    <input type="number" id="rg">
+                    <label for="cpf" name="cpf">CPF:</label>
+                    <input type="number" name="cpf" id="cpf" autocomplete="none">
+                </div>
+                <div class="row">
+                    <label for="cep" name="cep">CEP:</label>
+                    <input type="number" name="cep" id="cep" autocomplete="none">
+                </div>
+                <div class="row">
+                    <label for="street" name="street">Logradouro</label>
+                    <input type="text" name="street" id="street" autocomplete="none">
+                    <label for="streetNumber" name="streetNumber">Numero:</label>
+                    <input type="number" name="streetNumber" id="streetNumber" autocomplete="none">
+                </div>
+                <div class="row">
+                    <label for="district" nam="district">Bairro:</label>
+                    <input type="text" name="district" id="district" autocomplete="none">
+                    <label for="city" name="city">Cidade:</label>
+                    <input type="text" name="city" id="city" autocomplete="none">
+                    <label for="state">UF:</label>
+                    <select name="state">
+                        <option value=""></option>
+                        <option value="PE">PE</option>
+                        <option value="PB">PB</option>
+                        <option value="AL">AL</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="phoneNumber" name="phoneNumber">Telefone:</label>
+                    <input type="number" name="phoneNumber" id="phoneNumber" autocomplete="none">
+                </div>
+                <div class="row">
+                    <input type="reset" value="Limpar" id="reset">
+                    <input type="submit" value="Enviar" id="submit">
+                </div>
+            </form>
+    </fieldset>
+
+
+</body>
+</html>
