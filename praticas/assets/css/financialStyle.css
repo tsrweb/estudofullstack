@@ -74,17 +74,15 @@ nav ul li a{
     text-decoration: none;
 }
 
-section{
+section, footer{
     display: flex;
     justify-content: center;
 }
 
 .bannerContent{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #5D5FEF;
-    flex: 1;
     height: 500px;
     border-radius: 30px;
 }
@@ -101,7 +99,7 @@ section{
     margin-bottom: 35px;
 }
 
-.bannerText a{
+.bannerText a, .downloads a{
     color: #FFF;
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
@@ -109,13 +107,12 @@ section{
     text-align: center;
 }
 
-.bannerText span{
+.buttonStore span{
     width: 160px;
 }
 
 .bannerRow{
     display: flex;
-    flex: 1;
     justify-content: space-around;
 }
 
@@ -171,6 +168,227 @@ section{
 }
 
 .comments{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 495px;
+    width: 100%;
     background-color: #D8D8FF;
+}
+
+article header{
+    width: 680px;
+    height: auto;
+}
+
+article header p{
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 43px;
+    font-weight: bold;
+    color: #2F2E41;
+    margin-bottom: 0;
+}
+
+article p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.commentsButtons{
+    display: flex;
+    justify-content: space-between;
+    width: 680px;    
+}
+
+.commentsButtons .options{
+    display: flex;
+    align-items: center;
+}
+
+.options span{
+    font-size: 30px;
+    margin: 0 15px;
+}
+
+.bannerBotton{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    height: 240px;
+    background-color: #A5A6F6;
+    border-radius: 12px;
+    margin-top: 130px;
+    margin-bottom: 15px;
+}
+
+.bannerBotton h2{
+    display: flex;
+    align-items: center;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 48px;
+    color: #FFF;
+    width: 640px;
+
+}
+
+.downloads{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer p{
+    flex: 1;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #5D5FEF;
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    .container{
+        width: 990px;
+    }
+
+    .bannerText h1{
+        font-size: 60px;
+    }
+
+    .bannerImage img{
+        width: 380px;
+    }
+}
+
+@media (max-width:768px){
+
+    .container{
+        width: 750px;
+    }
+
+    .brand{
+        font-size: 38px;
+    }
+
+    nav ul li a{
+        font-size: 18px;
+    }
+
+    .bannerContent{
+        height: 350px;
+    }
+
+    .button{
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+
+    .bannerText{
+        margin-left: 15px;
+    }
+
+    .bannerText h1{
+        font-size: 54px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    .bannerRow{
+        justify-content: space-between;
+    }
+
+    .buttonStore{
+        width: 215px;
+        height: 55px;
+    }
+
+    .bannerText a, .downloads a{
+        font-size: 15px;
+    }
+
+    .buttonStore img{
+        width: 40px;
+    }
+
+    .bannerImage img{
+        width: 300px;
+    }
+
+    .headerSection h1{
+        font-size: 20px;
+    }
+
+    .headerSection h2{
+        font-size: 38px;
+    }
+
+    .cardArea{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article header{
+        width: 500px;
+    }
+
+    article header p{
+        font-size: 32px;
+    }
+
+    article p{
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .comments{
+        height: 350px;
+    }
+
+    .commentsButtons{
+        width: 550px;
+    }
+
+    .options img{
+        width: 40px;
+    }
+
+    .options span{
+        font-size: 22px;
+    }
+
+    .bannerBotton{
+        height: 150px;
+    }
+
+    .bannerBotton h2{
+        width: 445px;
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width:425px){
+    .container{
+        width: 95%;
+    }
+
+    header .container{
+        flex-direction: column;
+    }
+
+    nav ul li a{
+        font-size: 12px;
+    }
+
+    .bannerContent{
+        flex-direction: column;
+        height: auto;
+    }
+
 }
