@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
 
 body{
     margin: 0;
@@ -9,6 +10,11 @@ body{
 .container{
     display: flex;
     width: 1270px;
+}
+
+.column{
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
@@ -66,4 +72,105 @@ nav ul li a{
     display: block;
     cursor: pointer;
     text-decoration: none;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.bannerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5D5FEF;
+    flex: 1;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.bannerText{
+    margin-left: 53px;
+}
+
+.bannerText h1{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 76px;
+    color: #FFF;
+    letter-spacing: -2px;
+    margin-bottom: 35px;
+}
+
+.bannerText a{
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bannerText span{
+    width: 160px;
+}
+
+.bannerRow{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.buttonStore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 12px;
+    width: 273px;
+    height: 75px;
+}
+
+.headerSection h1{
+    color: #7879F1;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top:80px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.headerSection h2{
+    font-family: 'Epilogue', sans-serif;
+    font-size: 48px;
+    width: 525px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cardArea{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cardArea h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+}
+
+.cardArea span{
+    color: #A5A6F6;
+}
+
+.cardArea p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    width: 294px;
+}
+
+.comments{
+    height: 495px;
+    background-color: #D8D8FF;
 }
