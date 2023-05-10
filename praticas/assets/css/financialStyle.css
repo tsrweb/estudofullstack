@@ -252,7 +252,7 @@ footer p a{
     color: #5D5FEF;
 }
 
-@media (min-width:769px) and (max-width:1024px){
+@media (min-width:1000px) and (max-width:1260px){
     .container{
         width: 990px;
     }
@@ -266,7 +266,7 @@ footer p a{
     }
 }
 
-@media (max-width:768px){
+@media (min-width:768px) and (max-width:999px){
 
     .container{
         width: 750px;
@@ -373,22 +373,142 @@ footer p a{
 
 }
 
-@media (max-width:425px){
+@media (max-width:767px){
     .container{
-        width: 95%;
+        width: 310px;
+    }
+
+    header{
+        height: 100px;
     }
 
     header .container{
         flex-direction: column;
     }
 
+    .brand{
+        font-size: 30px;
+    }
+
     nav ul li a{
-        font-size: 12px;
+        font-size: 16px;
+        padding: 0 5px;
     }
 
     .bannerContent{
         flex-direction: column;
         height: auto;
+    }
+
+    .button{
+        display: none;
+    }
+
+    .bannerText{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .bannerText h1{
+        font-size: 23px;
+        margin-left: 25px;
+    }
+
+    .bannerRow{
+        justify-content: space-evenly;
+    }
+
+    .buttonStore{
+        width: 130px;
+        height: 30px;
+    }
+
+    .buttonStore span{
+        width: 70px;
+    }
+
+    .bannerText a, .downloads a{
+        font-size: 8px;
+    }
+
+    .buttonStore img{
+        width: 25px;
+    }
+
+    .bannerImage img{
+        width: 150px;
+    }
+
+    .headerSection h1{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .headerSection h2{
+        font-size: 16px;
+        width: auto;
+    }
+
+    .cardArea{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardArea img{
+        width: 200px;
+    }
+
+    .cardArea h3, .cardArea p{
+        font-size: 18px;
+    }
+
+    article header{
+        width: 290px;
+    }
+
+    article header p{
+        font-size: 20px;
+    }
+
+    article p{
+        font-size: 12px;
+    }
+
+    .comments{
+        height: 200px;
+    }
+
+    .commentsButtons{
+        width: 240px;
+    }
+
+    .options span{
+        font-size: 10px;
+    }
+
+    .options img{
+        width: 20px;
+    }
+
+    .bannerBotton{
+        flex-direction: column;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .bannerBotton h2{
+        width: auto;
+        font-size: 16px;
+        margin-left: 25px;
+    }
+
+    .downloads{
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    footer p{
+        font-size: 10px;
     }
 
 }
