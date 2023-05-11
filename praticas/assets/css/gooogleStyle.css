@@ -1,0 +1,52 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100vh;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content:flex-end;
+    height: 60px;
+
+}
+
+.links{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu, .accont{
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu img{
+    width: 20px;
+    height: 20px;
+}
+
+.accont img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    height: calc(100% - 560px);
+    min-height: 92px;
+    max-height: 290px;
+
+}
