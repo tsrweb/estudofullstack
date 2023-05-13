@@ -185,3 +185,16 @@ footer p{
         justify-content: space-around;
     }
 }
+
+@media (max-width:425px){
+    .search{
+        width: auto;
+        min-width: auto;
+    }
+
+    .buttons{
+        min-width: auto;
+    }
+
+
+}
