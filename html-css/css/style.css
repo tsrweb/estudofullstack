@@ -218,3 +218,65 @@ select{
     text-shadow: 8px 8px 3px #888;
 }
 
+/* Aplicando CSS por atributo */
+
+.atributo [for="name"]{
+    color: #00F;
+}
+
+.atributo [required]{
+    border-color: #F00;
+}
+
+/* *= contido ^= começando com $= final*/
+.atributo a[href*="google"]{
+    text-decoration: none;
+    color: #0F0;
+}
+
+li:empty{
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+}
+
+.firstLetter p::first-letter{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.firstLetter p::first-line{
+    background-color: rgba(255, 255, 0, 0.603);
+}
+
+.element{
+    display: flex;
+}
+
+.element div{
+    width: 20px;
+    height: 20px;
+    background-color: #770000;
+}
+
+.element div:first-child{
+    background-color: #00F;
+}
+
+.element div:last-child{
+    background-color: #0F0;
+}
+
+.negative :not(p){
+    background-color: #F00;
+}
+
+.nth div:nth-child(2){
+    background-color: #F00;
+}
+
+/* Seleciona negativo, de baixo pra cima*/
+
+.nth div:nth-last-child(2){
+    background-color: #00F;
+}
