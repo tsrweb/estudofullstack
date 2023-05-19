@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.image{
+    display: flex;
+    flex:1;
+}
