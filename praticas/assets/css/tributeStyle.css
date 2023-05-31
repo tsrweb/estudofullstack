@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -6,12 +8,12 @@ body{
     background-image: url(../images/fundo.jpg);
     background-attachment: fixed;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
     width: 700px;
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgb(255, 255, 255, 0.7);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,13 +22,12 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    font-size: 20px;
     padding: 0 20px;
 }
 
 .image{
     display: flex;
-    background-image: url(../images/ariano3.jpg);
+    background-image: url(../images/arianoSuassuna.jpg);
     background-size: cover;
     width: 640px;
     height: 360px;
@@ -36,7 +37,7 @@ body{
     border-radius: 30px;
 }
 
-.teste{
+.quote{
     height: 110px;
     width: 50%;
     background-color: rgb(204, 204, 204, 0.8);
@@ -57,14 +58,65 @@ body{
 
 h2, h3{
     margin: 10px;
-    text-align: center;
 }
 
 h1{
     text-align: center;
 }
 
-p{
+.content p{
     text-indent: 30px;
     text-align: justify;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-top: 1px solid #000;
+    font-size: 12px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover{
+    color: #0078ff;
+}
+
+@media (max-width:425px){
+
+    .container{
+        width: 300px;
+    }
+
+    .content{
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .image{
+        width: 300px;
+        height: 170px;
+    }
+
+    .quote{
+        width: 47%;
+        height: 50px;
+        margin: 0;
+    }
+    
+    .image q{
+        font-size: 9px;
+    }
+
+    ul{
+        padding: 0 17px;
+    }
+
+    footer{
+        font-size: 8px;
+    }
 }
