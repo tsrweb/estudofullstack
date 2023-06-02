@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 body{
     margin:0;
     padding:0;
@@ -182,6 +183,11 @@ header{
     margin-right: 12px;
 }
 
+.icon img{
+    width: 16px;
+    height: 16px;
+}
+
 .name, .webLink{
     margin: 0;
     padding: 0;
@@ -208,10 +214,6 @@ header{
     text-decoration: none;
 }
 
-.content a:hover{
-    color: red;
-}
-
 .block:hover{
     cursor: pointer;
 }
@@ -233,7 +235,11 @@ header{
 }
 
 .path span img{
-    width: 16px;
+    width: 12px;
+}
+
+.result {
+    margin-bottom: 25px;
 }
 
 .result .descrition{
@@ -241,4 +247,71 @@ header{
     line-height: 1.5;
     font-size: 14px;
     color: #4d5156;
+}
+
+.more{
+    margin-left: 20px;
+}
+
+.more .path{
+    height: auto;
+}
+
+.result tr{
+    display: flex;
+}
+
+.result td{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.result td span{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+}
+
+.result td a{
+    color: #1a73e8;
+}
+
+.result td a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    color: #70757a;
+    background-color: #f2f2f2;
+    font-size: 15px;
+}
+
+footer img{
+    width: 13px;
+}
+
+footer span{
+    border-left: 1px solid #d6d6d6;
+    height: 80%;
+    margin: 10px 10px 0px 10px;
+}
+
+footer p{
+    margin: 10px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.footerOption{
+    border-top: 1px solid #d6d6d6;
 }
