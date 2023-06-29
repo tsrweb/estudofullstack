@@ -116,7 +116,7 @@ nav .active a{
     font-weight: 600;
 }
 
-.banner a, .content-left a{
+.banner a, .content-left a, .galery-button{
     display: block;
     font-size: 12px;
     font-weight: 700;
@@ -195,7 +195,7 @@ nav .active a{
 }
 
 .card-services .line{
-    border-right: 1px solid #bebebe;
+    border-right: 1px solid #333;
     height: 210px;
     align-self: center;
 }
@@ -263,8 +263,37 @@ nav .active a{
     justify-content: space-around;
 }
 
-.galery img{
+.galery .photo{
     margin-top: 30px;
+    width: 255px;
+    height: 165px;
+}
+
+.photo-info{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.photo-info h4{
+    font-weight: 600;
+}
+
+.photo-info p{
+    width: 175px;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.galery .photo:hover .photo-info{
+    display: flex;
 }
 
 .section-ourteam{
