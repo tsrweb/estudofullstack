@@ -174,7 +174,7 @@ nav .active a {
 
 .default h3 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 14px;
     color: #aeaeae;
 }
@@ -306,7 +306,8 @@ nav .active a {
     overflow: hidden;
 }
 
-.section-ourteam .title {
+.section-ourteam .title,
+.section-reviwes .title {
     margin-top: 50px;
 }
 
@@ -315,7 +316,8 @@ nav .active a {
     overflow: hidden;
 }
 
-.section-ourteam .sliders {
+.section-ourteam .sliders,
+.section-reviwes .sliders {
     width: 1000vw;
     height: 100%;
 }
@@ -370,7 +372,8 @@ nav .active a {
     background-color: #B28756;
 }
 
-.section-ourteam .slidePointer {
+.section-ourteam .slidePointer,
+.section-reviwes .slidePointer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,7 +382,8 @@ nav .active a {
     margin-bottom: 30px;
 }
 
-.section-ourteam .pointer {
+.section-ourteam .pointer,
+.section-reviwes .pointer {
     height: 15px;
     width: 15px;
     border-radius: 50%;
@@ -388,6 +392,65 @@ nav .active a {
     cursor: pointer;
 }
 
-.section-ourteam .slidePointer .active {
+.section-ourteam .slidePointer .active,
+.section-reviwes .slidePointer .active  {
     background-color: #B28756;
+}
+
+.section-reviwes {
+    background-color: #F7F7F7;
+    overflow: hidden;
+}
+
+.section-reviwes .container {
+    max-width: 770px;
+    overflow: hidden;
+    padding: 10px 0 50px;
+}
+
+.section-reviwes .slide {
+    width: 770px;
+    height: 370px;
+    display: inline-block;
+}
+
+.section-reviwes .slideContent {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.section-reviwes .review{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-reviwes .review  img{
+    margin-bottom: 10px;
+}
+
+.section-reviwes .slideContent h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-reviwes .slideContent h3{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 5px;
+}
+
+.section-reviwes .slideContent p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.brands{
+    display: flex;
+    justify-content: space-between;
 }
