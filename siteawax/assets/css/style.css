@@ -573,3 +573,64 @@ nav .active a {
     font-size: 12px;
     font-weight: 300;
 }
+
+.share .container{
+    padding: 20px 0;
+    color: #333;
+}
+
+.share .container .left,
+.share .container .right,
+.share .container .right .socialMedia{
+    display: flex;
+    align-items: center;
+}
+
+.share .container .left{
+    margin-right: 50px;
+}
+
+.share .container .left p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.share .container .right .socialMedia{
+    margin-right: 30px;
+}
+
+.share .container .right .socialMedia p{
+    font-weight: 600;
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.share .container .right .socialMedia a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.share .container .right .twitter a{
+    background-color: #34c5f0;
+}
+
+.share .container .right .linkedin a{
+    background-color: #127cb4;
+}
+
+.share .container .right .facebook a{
+    background-color: #336297;
+}
+
+.share .container .right .googleplus a{
+    background-color: #e74237;
+}
+
+.share .container .right .pinterest a{
+    background-color: #b71c29;
+}
