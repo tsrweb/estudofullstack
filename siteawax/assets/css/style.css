@@ -574,6 +574,10 @@ nav .active a {
     font-weight: 300;
 }
 
+.share{
+    border-bottom: 1px solid #aeaeae;
+}
+
 .share .container{
     padding: 20px 0;
     color: #333;
