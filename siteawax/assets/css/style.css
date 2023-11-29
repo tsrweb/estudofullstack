@@ -298,7 +298,7 @@ nav .active a {
 }
 
 .ourTeam {
-    background-image: url('../images/bgimage.png');
+    background-image: url(../images/bgimage.png);
     background-size: cover;
     overflow: hidden;
 }
@@ -356,7 +356,8 @@ nav .active a {
     justify-content: center;
 }
 
-.ourTeam .slideContent .social a {
+.ourTeam .slideContent .social a,
+.footer .card .social a {
     background-color: #aeaeae;
     border-radius: 50%;
     display: flex;
@@ -367,7 +368,8 @@ nav .active a {
     margin: 0 2px;
 }
 
-.ourTeam .slideContent .social a:hover {
+.ourTeam .slideContent .social a:hover,
+.footer .card .social a:hover {
     background-color: #B28756;
 }
 
@@ -637,4 +639,168 @@ nav .active a {
 
 .share .container .right .pinterest a{
     background-color: #b71c29;
+}
+
+.contact{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.contact form{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact form label{
+    border-bottom: 1px solid #aeaeae;
+    padding-bottom: 5px;
+    color: #9e9e9e;
+}
+
+.contact form input,
+.contact form textarea{
+    margin-left: -4px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #aeaeae;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    background-color: #F7F7F7;
+}
+
+.contact form .email{
+    margin-left: 30px;
+}
+
+.contact form #subject{
+    margin-top: 40px
+}
+
+.contact form textarea{
+    margin-top: 10px;
+    margin-bottom: -9px;
+}
+
+.contact form input:focus,
+.contact form textarea:focus{
+    outline: 0;
+    border-bottom: 1px solid #aeaeae;
+}
+
+.contact form .buttonForm{
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 50px;
+    border-bottom: none;
+    border-radius: 20px;
+    color: #FFF;
+    background-color: #B28756;
+    padding: 15px 45px;
+    cursor: pointer;
+}
+
+.map{
+    background-image: url(/estudofullstack/siteawax/media/map1.png);
+}
+
+.map .content{
+    background-color: #FFF;
+    width: 540px;
+    margin-top: 0;
+    padding: 40px;
+}
+
+.map .content .contactInfo{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: #7e7e7e;
+    margin-bottom: 10px;
+}
+
+.map .content .contactInfo .contactInfoImg{
+    background-color: #bdbdbd;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.map .content .contactInfo .contactInfoImg img{
+    width: 15px;
+    height: 13px;
+}
+
+.map .content .contactInfo p{
+    margin-left: 20px;
+}
+
+.footer .container{
+    padding: 30px 0;
+}
+
+.footer .cardArea .card{
+    width: 380px;
+    height: 200px;
+    padding: 0;
+}
+
+.footer .card p{
+    font-size: 12px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 22px;
+}
+
+.footer .subscribe{
+    background-color: #373737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .subscribe form #email{
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #aeaeae;
+    background-color: #373737;
+}
+
+.footer .subscribe form ::placeholder{
+    text-align: center;
+}
+
+.footer .subscribe form .buttonForm{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 15px;
+    border-bottom: none;
+    border-radius: 20px;
+    color: #FFF;
+    background-color: #B28756;
+    padding: 15px 60px;
+    cursor: pointer;
+    border: none;
+}
+
+.footer .subscribe form input:focus{
+    outline: 0;
+}
+
+.footer .copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.footer .card .social a{
+    width: 25px;
+    height: 25px;
+}
+
+.copy{
+    font-size: 14px;
 }

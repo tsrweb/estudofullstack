@@ -37,21 +37,21 @@
             <div class="sliders">
                 <div class="slide">
                     <div class="slideContent">
-                        <h1>DESIGN IS ABOUT<br><span>COMMUNICARION</span></h1>
+                        <h1>DESIGN IS ABOUT<br /><span>COMMUNICARION</span></h1>
                         <h2>CALL US: +00 0 1234 5678</h2>
                         <a href="#" class="buttonPrimary">GET IN TOUCH!</a>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slideContent">
-                        <h1>DESIGN IS ABOUT<br><span>COMMUNICARION</span></h1>
+                        <h1>DESIGN IS ABOUT<br /><span>COMMUNICARION</span></h1>
                         <h2>CALL US: +00 0 1234 5678</h2>
                         <a href="#" class="buttonPrimary">GET IN TOUCH!</a>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slideContent">
-                        <h1>DESIGN IS ABOUT<br><span>COMMUNICARION</span></h1>
+                        <h1>DESIGN IS ABOUT<br /><span>COMMUNICARION</span></h1>
                         <h2>CALL US: +00 0 1234 5678</h2>
                         <a href="#" class="buttonPrimary">GET IN TOUCH!</a>
                     </div>
@@ -598,25 +598,96 @@
             </div>
         </section>
 
-        <section class="sectionDefault">
+        <section class="sectionDefault contact">
             <div class="container">
                 <h1>CONTACT US</h1>
                 <h3>our agency located in Melbourne, Australia</h3>
-                <div class="content">
-                    ...
+                <div class="content flex flexCenter">
+                    <form action="#">
+                        <label for="name" name="name">NAME</label>
+                        <input type="text" id="name" required>
+                        <label for="email" name="email" class="email">EMAIL</label>
+                        <input type="email" id="email" required><br />
+                        <label for="subject" name="subject">SUBJECT</label>
+                        <input type="text" id="subject" size="50" required><br />
+                        <label for="messag" name="messag">MESSAGE</label>
+                        <textarea name="message" id="message" cols="50" rows="5" required></textarea><br />
+                        <input type="submit" class="buttonForm" value="SEND MESSAGE">
+                    </form>
                 </div>
             </div>
         </section>
 
-        <section class="sectionDefault">
+        <section class="sectionDefault map">
             <div class="container">
-                <h1>TITTLE</h1>
-                <h3>SUBTITLE</h3>
-                <div class="content">
-                    ...
+                <div class="content column">
+                    <div class="contactInfo">
+                        <div class="contactInfoImg">
+                            <img src="assets/images/carta.png" alt="">
+                        </div>
+                        <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+                    </div>
+                    <div class="contactInfo">
+                        <div class="contactInfoImg">
+                            <img src="assets/images/localizacao.png" alt="">
+                        </div>
+                        <p>121 King Street, Melbourne Victoria 3000 Australia</p>
+                    </div>
+                    <div class="contactInfo">
+                        <div class="contactInfoImg">
+                            <img src="assets/images/telefone.png" alt="">
+                        </div>
+                        <p>+00 0 1234 5678</p>
+                    </div>
+                    <div class="contactInfo">
+                        <div class="contactInfoImg">
+                            <img src="assets/images/arroba.png" alt="">
+                        </div>
+                        <p>bukindesign@gmail.com</p>
+                    </div>
+                    <div class="contactInfo">
+                        <div class="contactInfoImg">
+                            <img src="assets/images/web.png" alt="">
+                        </div>
+                        <p>www.envato.com</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <footer class="sectionDefault darkTheme footer">
+            <div class="container">
+                <div class="cardArea flex">
+                    <div class="card copyright">
+                        <div class="social flex">
+                            <a href="#"><img src="./assets/images/twitter.png" alt=""></a>
+                            <a href="#"><img src="./assets/images/instagram.png" alt=""></a>
+                            <a href="#"><img src="./assets/images/linkedin.png" alt=""></a>
+                            <a href="#"><img src="./assets/images/facebook.png" alt=""></a>
+                            <a href="#"><img src="./assets/images/youtube.png" alt=""></a>
+                            <a href="#"><img src="./assets/images/googleplus.png" alt=""></a>
+                            <a href="#"><img src="./assets/images/other.png" alt=""></a>
+                        </div>
+                        <div class="copy">AWAX © 2016</div>
+                    </div>
+                    <div class="card">
+                        <p>Nulla iaculis enim a magna tempor congue. Sed aliquam dignissim hendrerit.
+                            Duis erat nulla, pellentesque at enim in, scelerisque placerat nunc.
+                            Nulla vestibulum ex sed neque auctor rutrum. Donec fringilla tincidunt aliquet.
+                            Nullam rhoncus urna massa, vulputate congue velit pulvinar suscipit.
+                            Mauris laoreet blandit pharetra. Suspendisse rutrum dolor at augue convallis,
+                            eget dapibus nunc consequat. Sed diam nulla, elementum non laoreet eu,
+                            vulputate urna, at pellentesque risus orci in ante.</p>
+                    </div>
+                    <div class="card subscribe">
+                        <form action="#">
+                            <input type="email" id="email" placeholder="EMAIL TO SOBSCRIBE" required><br />
+                            <input type="submit" class="buttonForm" value="SUBSCRIBE">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </main>
 </body>
