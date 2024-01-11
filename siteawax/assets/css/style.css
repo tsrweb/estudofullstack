@@ -553,6 +553,12 @@ nav .active a {
     margin: 0 0 50px 0;
 }
 
+.premium .slidePointer{
+    width: 1050px;
+    border-top: 1px solid #ccc;
+    padding-top: 35px;
+}
+
 .facts .card {
     display: flex;
     flex-direction: column;
@@ -811,6 +817,10 @@ nav .active a {
 
 @media (min-width:450px) and (max-width:800px){
 
+    .container{
+        width: 768px;
+    }
+
     .brand{
         margin-left: 50px;
     }
@@ -818,6 +828,10 @@ nav .active a {
     .menuMobile{
         display: block;
         margin-right: 50px;
+    }
+
+    .imgMobile{
+        display: none;
     }
 
     nav{
@@ -846,6 +860,14 @@ nav .active a {
         color: #B28756;
     }
 
+    .sectionDefault h1{
+        font-size: 25px;
+    }
+
+    .sectionDefault h3{
+        font-size: 12px;
+    }
+
     .banner h1 {
         font-size: 50px;
     }
@@ -865,6 +887,8 @@ nav .active a {
 
     .buttonPrimary{
         margin-top: 20px;
+        font-size: 10px;
+        padding: 10px 40px;
     }
 
     .services .container .content .cardArea{
@@ -874,6 +898,15 @@ nav .active a {
 
     .services .container .content .cardArea .servicesLine.medium{
         display: none;
+    }
+
+    .ourProjects .nav li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+
+    .ourProjects .nav .line {
+        height: 40px;
     }
 
     .ourProjects .galery{
@@ -887,6 +920,128 @@ nav .active a {
 
     .ourProjects .galery .photo img{
         width: 100%;
+    }
+
+    .ourProjects .galery .photo:hover .photoInfo {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .ourProjects .galery .photo:hover .photoInfo p{
+        font-size: 10px;
+    }
+
+    .ourTeam .container{
+        width: 540px;
+    }
+
+    .ourTeam .slide{
+        width: 250px;
+        height: 310px;
+    }
+
+    .ourTeam .slideContent{
+        width: 250px;
+        height: 300px;
+    }
+
+    .ourTeam .slideContent img{
+        width: 120px;
+    }
+
+    .ourTeam .slideContent .nameTeam h1 {
+        font-size: 14px;
+    }
+
+    .ourTeam .slideContent .nameTeam h3 {
+        font-size: 10px;
+    }
+
+    .ourTeam .slideContent .social img{
+        width: 10px;
+    }
+
+    .ourTeam .slideContent .social a, .footer .card .social a {
+        height: 25px;
+        width: 25px;
+    }
+
+    .review .slideContent img {
+        width: 120px;
+    }
+
+    .review .slide{
+        height: 320px;
+    }
+
+    .review .reviewText img{
+        width: 20px;
+    }
+    
+    .review .slideContent h1 {
+        font-size: 18px;
+    }
+
+    .review .slideContent h3 {
+        font-size: 14px;
+    }
+
+    .review .reviewText {
+        width: 590px;
+        font-size: 12px;
+    }
+
+    .partners .logos {
+        justify-content: space-evenly;
+    }
+    
+    .partners .logos img{
+        width: auto;
+        height: 40px;
+    }
+
+    .price .cardArea{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .price .cardArea .card{
+        width: 260px;
+        margin-bottom: 15px;
+    }
+
+    .premium .slideContent {
+        justify-content: space-evenly;
+    }
+
+    .premium .slideContent .contentLeft img{
+        height: auto;
+        width: 230px;
+    }
+
+    .premium .slideContent .contentRight{
+        width: 630px;
+    }
+
+    .premium .checkImage img{
+        height: auto;
+        width: 25px;
+    }
+
+    .premium .checkImage {
+        margin-right: 10px;
+    }
+
+    .premium .feature h1 {
+        font-size: 16px;
+    }
+
+    .premium .feature p {
+        font-size: 12px;
+    }
+
+    .premium .slidePointer{
+        width: 720px;
     }
 
 }
