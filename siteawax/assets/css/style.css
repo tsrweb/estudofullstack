@@ -55,6 +55,10 @@ header .container {
     height: 50px;
 }
 
+.menuMobile{
+    display: none;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -803,4 +807,86 @@ nav .active a {
 
 .copy{
     font-size: 14px;
+}
+
+@media (min-width:450px) and (max-width:800px){
+
+    .brand{
+        margin-left: 50px;
+    }
+
+    .menuMobile{
+        display: block;
+        margin-right: 50px;
+    }
+
+    nav{
+        position: absolute;
+        z-index: 99;
+        right: 0;
+        top: 100px;
+        width: 315px;
+        height: calc(100vh - 100px);
+        background: rgba(0,0,0,0.8);
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li a{
+        border: 0;
+        height: 40px;
+        margin-left: 50px;
+
+    }
+
+    nav ul li.active a{
+        border: 0;
+        color: #B28756;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    .banner h2 {
+        font-size: 17px;
+    }
+
+    .aboutUs .container .content .contentRight img{
+        width: 400px;
+    }
+
+    .aboutUs .container .content .contentLeft{
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .buttonPrimary{
+        margin-top: 20px;
+    }
+
+    .services .container .content .cardArea{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services .container .content .cardArea .servicesLine.medium{
+        display: none;
+    }
+
+    .ourProjects .galery{
+        padding: 0 20px;
+    }
+
+    .ourProjects .galery .photo {
+        width: 170px;
+        height: 110px;
+    }
+
+    .ourProjects .galery .photo img{
+        width: 100%;
+    }
+
 }
