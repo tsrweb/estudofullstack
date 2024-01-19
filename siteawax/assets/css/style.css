@@ -361,7 +361,7 @@ nav .active a {
 }
 
 .ourTeam .slideContent .social a,
-.footer .card .social a {
+footer .card .social a {
     background-color: #aeaeae;
     border-radius: 50%;
     display: flex;
@@ -373,7 +373,7 @@ nav .active a {
 }
 
 .ourTeam .slideContent .social a:hover,
-.footer .card .social a:hover {
+footer .card .social a:hover {
     background-color: #B28756;
 }
 
@@ -710,18 +710,18 @@ nav .active a {
     cursor: pointer;
 }
 
-.map{
-    background-image: url(/estudofullstack/siteawax/media/map1.png);
+.contactUs{
+    background-image: url("../../media/map1.png");
 }
 
-.map .content{
+.contactUs .content{
     background-color: #FFF;
     width: 540px;
     margin-top: 0;
     padding: 40px;
 }
 
-.map .content .contactInfo{
+.contactUs .content .contactInfo{
     display: flex;
     align-items: center;
     font-size: 12px;
@@ -730,46 +730,46 @@ nav .active a {
     margin-bottom: 10px;
 }
 
-.map .content .contactInfo .contactInfoImg{
+.contactUs .content .contactInfo .contactInfoImg{
     background-color: #bdbdbd;
     padding: 10px;
     border-radius: 50%;
 }
 
-.map .content .contactInfo .contactInfoImg img{
+.contactUs .content .contactInfo .contactInfoImg img{
     width: 15px;
     height: 13px;
 }
 
-.map .content .contactInfo p{
+.contactUs .content .contactInfo p{
     margin-left: 20px;
 }
 
-.footer .container{
-    padding: 30px 0;
+footer .container{
+    padding: 30px 0 !important;
 }
 
-.footer .cardArea .card{
+footer .cardArea .card{
     width: 380px;
     height: 200px;
     padding: 0;
 }
 
-.footer .card p{
+footer .card p{
     font-size: 12px;
     font-weight: 300;
     text-align: left;
     line-height: 22px;
 }
 
-.footer .subscribe{
+footer .subscribe{
     background-color: #373737;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer .subscribe form #email{
+footer .subscribe form #email{
     padding: 10px;
     border-top: none;
     border-left: none;
@@ -778,11 +778,11 @@ nav .active a {
     background-color: #373737;
 }
 
-.footer .subscribe form ::placeholder{
+footer .subscribe form ::placeholder{
     text-align: center;
 }
 
-.footer .subscribe form .buttonForm{
+footer .subscribe form .buttonForm{
     font-size: 13px;
     font-weight: 600;
     margin-top: 15px;
@@ -795,18 +795,18 @@ nav .active a {
     border: none;
 }
 
-.footer .subscribe form input:focus{
+footer .subscribe form input:focus{
     outline: 0;
 }
 
-.footer .copyright{
+footer .copyright{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: start;
 }
 
-.footer .card .social a{
+footer .card .social a{
     width: 25px;
     height: 25px;
 }
@@ -861,11 +861,11 @@ nav .active a {
     }
 
     .sectionDefault h1{
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .sectionDefault h3{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .banner h1 {
@@ -961,7 +961,7 @@ nav .active a {
         width: 10px;
     }
 
-    .ourTeam .slideContent .social a, .footer .card .social a {
+    .ourTeam .slideContent .social a, footer .card .social a {
         height: 25px;
         width: 25px;
     }
@@ -1042,6 +1042,325 @@ nav .active a {
 
     .premium .slidePointer{
         width: 720px;
+    }
+
+    .facts .cardArea{
+        justify-content: center;
+    }
+
+    .facts .card{
+        width: 170px;
+    }
+
+    .facts .card h1{
+        font-size: 30px;
+    }
+
+    .facts .card h2,
+    .facts .card h3{
+        font-size: 10px;
+    }
+
+    .contactUs{
+        background-position: center;
+    }
+
+    .contactUs .content{
+        width: 400px;
+        padding: 20px;
+        margin-left: 30px;
+    }
+
+    footer .cardArea{
+        justify-content: center;
+    }    
+
+    footer .cardArea .card{
+        width: 250px;
+    }
+
+    footer .cardArea .card p{
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    footer .cardArea .copyright{
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width:450px){
+
+    .container{
+        width: 768px;
+    }
+
+    .brand{
+        margin-left: 50px;
+    }
+
+    .menuMobile{
+        display: block;
+        margin-right: 50px;
+    }
+
+    .imgMobile{
+        display: none;
+    }
+
+    nav{
+        position: absolute;
+        z-index: 99;
+        right: 0;
+        top: 100px;
+        width: 315px;
+        height: calc(100vh - 100px);
+        background: rgba(0,0,0,0.8);
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li a{
+        border: 0;
+        height: 40px;
+        margin-left: 50px;
+
+    }
+
+    nav ul li.active a{
+        border: 0;
+        color: #B28756;
+    }
+
+    .sectionDefault h1{
+        font-size: 22px;
+    }
+
+    .sectionDefault h3{
+        font-size: 10px;
+    }
+
+    .banner h1 {
+        font-size: 50px;
+    }
+
+    .banner h2 {
+        font-size: 17px;
+    }
+
+    .aboutUs .container .content .contentRight img{
+        width: 400px;
+    }
+
+    .aboutUs .container .content .contentLeft{
+        margin-left: 20px;
+        font-size: 13px;
+    }
+
+    .buttonPrimary{
+        margin-top: 20px;
+        font-size: 10px;
+        padding: 10px 40px;
+    }
+
+    .services .container .content .cardArea{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .services .container .content .cardArea .servicesLine.medium{
+        display: none;
+    }
+
+    .ourProjects .nav li a {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+
+    .ourProjects .nav .line {
+        height: 40px;
+    }
+
+    .ourProjects .galery{
+        padding: 0 20px;
+    }
+
+    .ourProjects .galery .photo {
+        width: 170px;
+        height: 110px;
+    }
+
+    .ourProjects .galery .photo img{
+        width: 100%;
+    }
+
+    .ourProjects .galery .photo:hover .photoInfo {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .ourProjects .galery .photo:hover .photoInfo p{
+        font-size: 10px;
+    }
+
+    .ourTeam .container{
+        width: 540px;
+    }
+
+    .ourTeam .slide{
+        width: 250px;
+        height: 310px;
+    }
+
+    .ourTeam .slideContent{
+        width: 250px;
+        height: 300px;
+    }
+
+    .ourTeam .slideContent img{
+        width: 120px;
+    }
+
+    .ourTeam .slideContent .nameTeam h1 {
+        font-size: 14px;
+    }
+
+    .ourTeam .slideContent .nameTeam h3 {
+        font-size: 10px;
+    }
+
+    .ourTeam .slideContent .social img{
+        width: 10px;
+    }
+
+    .ourTeam .slideContent .social a, footer .card .social a {
+        height: 25px;
+        width: 25px;
+    }
+
+    .review .slideContent img {
+        width: 120px;
+    }
+
+    .review .slide{
+        height: 320px;
+    }
+
+    .review .reviewText img{
+        width: 20px;
+    }
+    
+    .review .slideContent h1 {
+        font-size: 18px;
+    }
+
+    .review .slideContent h3 {
+        font-size: 14px;
+    }
+
+    .review .reviewText {
+        width: 590px;
+        font-size: 12px;
+    }
+
+    .partners .logos {
+        justify-content: space-evenly;
+    }
+    
+    .partners .logos img{
+        width: auto;
+        height: 40px;
+    }
+
+    .price .cardArea{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .price .cardArea .card{
+        width: 260px;
+        margin-bottom: 15px;
+    }
+
+    .premium .slideContent {
+        justify-content: space-evenly;
+    }
+
+    .premium .slideContent .contentLeft img{
+        height: auto;
+        width: 230px;
+    }
+
+    .premium .slideContent .contentRight{
+        width: 630px;
+    }
+
+    .premium .checkImage img{
+        height: auto;
+        width: 25px;
+    }
+
+    .premium .checkImage {
+        margin-right: 10px;
+    }
+
+    .premium .feature h1 {
+        font-size: 16px;
+    }
+
+    .premium .feature p {
+        font-size: 12px;
+    }
+
+    .premium .slidePointer{
+        width: 720px;
+    }
+
+    .facts .cardArea{
+        justify-content: center;
+    }
+
+    .facts .card{
+        width: 170px;
+    }
+
+    .facts .card h1{
+        font-size: 30px;
+    }
+
+    .facts .card h2,
+    .facts .card h3{
+        font-size: 10px;
+    }
+
+    .contactUs{
+        background-position: center;
+    }
+
+    .contactUs .content{
+        width: 400px;
+        padding: 20px;
+        margin-left: 30px;
+    }
+
+    footer .cardArea{
+        justify-content: center;
+    }    
+
+    footer .cardArea .card{
+        width: 250px;
+    }
+
+    footer .cardArea .card p{
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    footer .cardArea .copyright{
+        align-items: flex-start;
     }
 
 }
