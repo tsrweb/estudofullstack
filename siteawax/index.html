@@ -606,13 +606,13 @@
                 <div class="content flex flexCenter">
                     <form action="#">
                         <label for="name" name="name">NAME</label>
-                        <input type="text" id="name" required>
+                        <input type="text" id="name" class="inpName" required>
                         <label for="email" name="email" class="email">EMAIL</label>
-                        <input type="email" id="email" required><br />
+                        <input type="email" id="email" class="inpEmail" required><br />
                         <label for="subject" name="subject">SUBJECT</label>
-                        <input type="text" id="subject" size="53" required><br />
+                        <input type="text" class="inpSubject" required><br />
                         <label for="messag" name="messag">MESSAGE</label>
-                        <textarea name="message" id="message" cols="52" rows="5" required></textarea><br />
+                        <textarea name="message" class="inpText" required></textarea><br />
                         <input type="submit" class="buttonForm" value="SEND MESSAGE">
                     </form>
                 </div>
@@ -653,6 +653,7 @@
                         <p>www.envato.com</p>
                     </div>
                 </div>
+                <div class="mobile"></div>
             </div>
         </section>
 
@@ -671,7 +672,7 @@
                         </div>
                         <div class="copy">AWAX © 2016</div>
                     </div>
-                    <div class="card">
+                    <div class="card mid">
                         <p>Nulla iaculis enim a magna tempor congue. Sed aliquam dignissim hendrerit.
                             Duis erat nulla, pellentesque at enim in, scelerisque placerat nunc.
                             Nulla vestibulum ex sed neque auctor rutrum. Donec fringilla tincidunt aliquet.
@@ -679,6 +680,7 @@
                             Mauris laoreet blandit pharetra. Suspendisse rutrum dolor at augue convallis,
                             eget dapibus nunc consequat. Sed diam nulla, elementum non laoreet eu,
                             vulputate urna, at pellentesque risus orci in ante.</p>
+                            <div class="copy">AWAX © 2016</div>
                     </div>
                     <div class="card subscribe">
                         <form action="#">
@@ -692,5 +694,19 @@
 
     </main>
 </body>
+
+<script>
+    
+    window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector("nav").style.display == 'flex') {
+                    document.querySelector("nav").style.display = 'none';
+                } else {
+                    document.querySelector("nav").style.display = 'flex';
+                }
+            });
+        };
+    
+</script>
 
 </html>

@@ -687,9 +687,16 @@ footer .card .social a:hover {
     margin-top: 40px
 }
 
-.contact form textarea{
+.contact form .inpSubject{
+    margin-top: 40px;
+    width: 400px;
+}
+
+.contact form .inpText{
     margin-top: 10px;
     margin-bottom: -9px;
+    width: 400px;
+    height: 30px;
 }
 
 .contact form input:focus,
@@ -799,6 +806,10 @@ footer .subscribe form input:focus{
     outline: 0;
 }
 
+footer .mid .copy{
+    display: none;
+}
+
 footer .copyright{
     display: flex;
     flex-direction: column;
@@ -811,8 +822,9 @@ footer .card .social a{
     height: 25px;
 }
 
-.copy{
+footer .copy{
     font-size: 14px;
+    text-align: start;
 }
 
 @media (min-width:450px) and (max-width:800px){
@@ -828,6 +840,10 @@ footer .card .social a{
     .menuMobile{
         display: block;
         margin-right: 50px;
+    }
+
+    nav{
+        display: none;
     }
 
     .imgMobile{
@@ -1113,6 +1129,10 @@ footer .card .social a{
         margin-right: 50px;
     }
 
+    nav{
+        display: none;
+    }
+
     .imgMobile{
         display: none;
     }
@@ -1334,17 +1354,22 @@ footer .card .social a{
         margin-bottom: 15px;
     }
 
+    .premium .slide{
+        width: 450px;
+    }
+
     .premium .slideContent {
-        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .premium .slideContent .contentRight{
+        width: 350px;
+        margin-top: 30px;
     }
 
     .premium .slideContent .contentLeft img{
         height: auto;
         width: 230px;
-    }
-
-    .premium .slideContent .contentRight{
-        width: 630px;
     }
 
     .premium .checkImage img{
@@ -1365,7 +1390,7 @@ footer .card .social a{
     }
 
     .premium .slidePointer{
-        width: 720px;
+        width: 450px;
     }
 
     .facts .cardArea{
@@ -1416,31 +1441,83 @@ footer .card .social a{
         margin-top: 10px;
     }
 
+    .contact form{
+        width: 370px;
+    }
+
+    .contact form .inpName{
+        width: 300px;
+    }
+
+    .contact form .email{
+        margin: 0;
+    }
+
+    .contact form .inpEmail{
+        width: 300px;
+        margin-top: 40px;
+    }
+
+    .contact form .inpSubject{
+        width: 290px;
+    }
+
+    .contact form .inpText{
+        width: 290px;
+        height: 80px;
+    }
+
     .contactUs{
-        background-position: center;
+        background-image: none;
+    }
+
+    .contactUs .container{
+        padding: 0;
     }
 
     .contactUs .content{
-        width: 400px;
-        padding: 20px;
-        margin-left: 30px;
+        width: 100%;
+        padding: 15px;
+        margin:0;
+    }
+
+    .contactUs .mobile{
+        background-image: url("../../media/mapMobile.png");
+        height: 300px;
+        width: auto;
     }
 
     footer .cardArea{
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }    
 
     footer .cardArea .card{
-        width: 250px;
+        width: 350px;
+    }
+
+    footer .cardArea .subscribe{
+        order: -1;
+    }
+
+    footer .cardArea .copyright{
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .cardArea .copyright .copy{
+        display: none;
+    }
+
+    footer .cardArea .mid .copy{
+        display: block;
+        margin-top: 20px;
+        text-align: center;
     }
 
     footer .cardArea .card p{
         font-size: 10px;
         line-height: 18px;
     }
-
-    footer .cardArea .copyright{
-        align-items: flex-start;
-    }
-
 }
